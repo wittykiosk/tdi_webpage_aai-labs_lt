@@ -561,7 +561,8 @@ img::-moz-selection {
     white-space: nowrap;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none
+    appearance: none;
+    height: 46px;
 }
 
 .btn:focus,
