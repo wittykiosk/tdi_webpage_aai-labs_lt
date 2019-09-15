@@ -19,8 +19,13 @@
 }
 
 .solutions ul { 
-    list-style-type: circle;
-    margin-left:3em;
+    list-style-type: circle !important;
+    margin-left: 3em;
+    /* font-weight: 600; */
+}
+
+.solutions ul li{ 
+    list-style-type: circle !important;
     /* font-weight: 600; */
 }
 
