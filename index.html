@@ -159,7 +159,7 @@
     </div>
 
     <div class="container pt1 mt4 mb2 text--gray border--bottom solutions pb4">
-        <div class=" align--center">
+        <div class="align--center">
             <h2 class="title">Sprendimai</h2>
         </div>
         <div class="">
@@ -198,7 +198,7 @@
     </div>
 
     <div class="container pt1 mt4 mb2 text--gray border--bottom solutions pb4">
-        <div class="lygiuoti - centrą">
+        <div class="align--center">
             <h2 class="title"> Konsultacijų paslaugos </h2>
         </div>
         <div class="">
@@ -219,6 +219,20 @@
                 <li> Mobilių programėlių sėkmės numatymas naudojant AI metodus</li>
             </ul>
 
+        </div>
+    </div>
+
+    <div class="container pt1 mt4 mb2 text--gray border--bottom solutions pb4">
+        <div class="align--center">
+            <h2 class="title">Projektų viešinimas</h2>
+        </div>
+
+        <div class="align--center">
+            <a class="btn btn--secondary" onclick="toggleFinbroDisplay()" target="_blank">FINBRO</a>
+        </div>
+
+        <div id="finbroPublicity" class="align--center" >
+            <iframe width="100%" height="1000" src="https://docs.google.com/document/d/e/2PACX-1vQiuVzXOB9UXJ_8G6uPGUpWF13OwuCIUtoGGJuhXxHNlZxPBv3LDyZ8c7qKiuN7hQ/pub?embedded=true"></iframe>
         </div>
     </div>
 
@@ -433,6 +447,17 @@
         </div>
     </div>
 </footer>
+
+<script>
+    function toggleFinbroDisplay() {
+        const x = document.getElementById("finbroPublicity");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 
