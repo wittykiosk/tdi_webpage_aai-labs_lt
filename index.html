@@ -227,18 +227,32 @@
             <h2 class="title">Projektų viešinimas</h2>
         </div>
 
-        <div class="align--center">
+        <div class="align--center publicity-element">
             <h3 class="title">FINBRO</h3>
             <p style="margin-bottom: 20px"><i>AAI Labs</i> dalyvauja <i>Norvegijos finansinio mechanizmo</i> ir <i>Lietuvos Respublikos valstybės biudžeto</i> lėšų finansuojamame projekte <i>FINBRO</i>. Šio projekto metu kuriamas produktas - finansinių paslaugų platforma, sujungianti finansuotojus ir padedanti žmonėms bei verslui pasiskolinti geriausiomis sąlygomis. <i>AAI Labs</i> atlieka didžiąją dalį darbo įgyvendinant produktą.</p>
-            <a class="btn btn--secondary" onclick="toggleFinbroDisplay()" target="_blank">Skaityti daugiau</a>
+            <a class="btn btn--secondary" onclick="togglePublicityDisplay('finbroPublicity')" target="_blank">Skaityti daugiau</a>
         </div>
 
-        <div id="finbroPublicity" style="display: none" class="align--center" >
-            <a href="files/finbro_viesinimo_failai.zip">
-                <img src="https://img.icons8.com/material-outlined/24/000000/download--v2.png" alt="Atsisiųsti FINBRO projekto dokumento ir ženklų failus"/>
+        <div id="finbroPublicity" class="align--center publicity-sub-element" style="display: none">
+            <a href="files/finbro_viesinimo_failai.zip" title="Atsisiųsti FINBRO projekto dokumento ir ženklų failus">
+                <img src="https://img.icons8.com/material-outlined/24/000000/download--v2.png"/>
                 <p>Atsisiųsti informaciją</p>
             </a>
             <iframe width="100%" height="800" src="https://docs.google.com/document/d/e/2PACX-1vQiuVzXOB9UXJ_8G6uPGUpWF13OwuCIUtoGGJuhXxHNlZxPBv3LDyZ8c7qKiuN7hQ/pub?embedded=true"></iframe>
+        </div>
+
+        <div class="align--center publicity-element ">
+            <h3 class="title">E-Komercija</h3>
+            <p style="margin-bottom: 20px"><i>AAI Labs</i> vykdo projektą <i>E-Komercija</i>, kurio tikslas – informacinių technologijų verslo sandoriams valdyti elektroniniu būdu diegimas, siekiant padidinti pajamų augimą.</p>
+            <a class="btn btn--secondary" onclick="togglePublicityDisplay('eCommercePublicity')" target="_blank">Skaityti daugiau</a>
+        </div>
+
+        <div id="eCommercePublicity" class="align--center publicity-sub-element" style="display: none">
+            <a href="files/ekomercija_viesinimo_failai.zip" title="Atsisiųsti E-Komercija projekto dokumento ir ženklų failus">
+                <img src="https://img.icons8.com/material-outlined/24/000000/download--v2.png"/>
+                <p>Atsisiųsti informaciją</p>
+            </a>
+            <iframe width="100%" height="800" src="https://docs.google.com/document/d/e/2PACX-1vSFehCRL1Q4D3g7x-sv8A41Ip6-YL_5LVIhSuMUD3mQ8QFRgk39iNAevHoQFY9Lpg/pub?embedded=true"></iframe>
         </div>
     </div>
 
@@ -466,8 +480,8 @@
 </footer>
 
 <script>
-    function toggleFinbroDisplay() {
-        const x = document.getElementById("finbroPublicity");
+    function togglePublicityDisplay(publicityDivId) {
+        const x = document.getElementById(publicityDivId);
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
