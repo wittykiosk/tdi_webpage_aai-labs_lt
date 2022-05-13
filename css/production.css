@@ -53,6 +53,14 @@
     margin-top: 6em;
 }
 
+.publicity-element p {
+    margin-bottom: 20px;
+}
+
+.publicity-element a {
+    margin-top: 1em;
+}
+
 .publicity-sub-element {
     margin-top: 3em;
 }
