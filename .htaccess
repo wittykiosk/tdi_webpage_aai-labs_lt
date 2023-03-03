@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^old-page-url$ /new-page-url [R=301,L]
+RewriteRule ^aai-labs.lt$ /aai-labs.com [R=301,L]
